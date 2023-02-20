@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/BanderaArgentina"
+            android:layout_width="0dp"
+            android:layout_height="273dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/descarga" />
+
+        <TextView
+            android:id="@+id/paisText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/pais"
+            app:layout_constraintBaseline_toBaselineOf="@+id/paisValue"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/poblacionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/poblacion"
+            app:layout_constraintBaseline_toBaselineOf="@+id/poblacionValue"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/paisValue"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="55dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/pais_value"
+            app:layout_constraintEnd_toEndOf="@+id/BanderaArgentina"
+            app:layout_constraintStart_toEndOf="@+id/paisText"
+            app:layout_constraintTop_toBottomOf="@+id/BanderaArgentina" />
+
+        <EditText
+            android:id="@+id/poblacionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/poblacion_value"
+            app:layout_constraintStart_toStartOf="@+id/paisValue"
+            app:layout_constraintTop_toBottomOf="@+id/paisValue" />
+
+        <TextView
+            android:id="@+id/Argentina_detalles"
+            android:layout_width="0dp"
+            android:layout_height="618dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="29dp"
+            android:text="@string/argentibna_descripcion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poblacionValue" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
