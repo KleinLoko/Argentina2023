@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/BanderaArgentina"
-            android:layout_width="0dp"
-            android:layout_height="270dp"
+            android:layout_width="1021dp"
+            android:layout_height="483dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
